@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>API Results</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Year</th>
+        <th>Description</th>
+        <th>Wikipedia</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="event : ${events}">
+        <td th:text="${event.year}">Year</td>
+        <td th:text="${event.description}">Description</td>
+        <td><a th:href="${event.wikipedia}" th:text="${event.wikipedia}">Wikipedia</a></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
