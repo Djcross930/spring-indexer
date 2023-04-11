@@ -1,10 +1,11 @@
 package com.example.springindex;
+import java.util.List;
 
 public class Event {
 
     private String year;
     private String description;
-    private String wikipedia;
+    private List<WikipediaLink> wikipedia;
 
     // Getters and setters
 
@@ -24,11 +25,11 @@ public class Event {
         this.description = description;
     }
 
-    public String getWikipedia() {
+    public List<WikipediaLink> getWikipedia() {
         return wikipedia;
     }
 
-    public void setWikipedia(String wikipedia) {
+    public void setWikipedia(List<WikipediaLink> wikipedia) {
         this.wikipedia = wikipedia;
     }
 }

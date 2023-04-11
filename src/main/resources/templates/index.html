@@ -17,9 +17,10 @@
     <tr th:each="event : ${events}">
         <td th:text="${event.year}">Year</td>
         <td th:text="${event.description}">Description</td>
-        <td><a th:href="${event.wikipedia}" th:text="${event.wikipedia}">Wikipedia</a></td>
+        <td><a th:href="${event.wikipedia[0].wikipedia}" th:text="${event.wikipedia[0].wikipedia}">Wikipedia</a></td>
     </tr>
     </tbody>
 </table>
 </body>
 </html>
+
