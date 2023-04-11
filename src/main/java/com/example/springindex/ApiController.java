@@ -17,7 +17,7 @@ public class ApiController {
         int currentDay = currentDate.getDayOfMonth();
         int currentMonth = currentDate.getMonthValue();
 
-        // Replace the hardcoded day and month with the current day and month
+        //This produces a dynamic api to show the current days historical events
         String apiUrl = "https://byabbe.se/on-this-day/" + currentMonth + "/" + currentDay + "/events.json";
 
         RestTemplate restTemplate = new RestTemplate();
