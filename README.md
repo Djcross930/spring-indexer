@@ -1,4 +1,4 @@
-# Spring Boot Thymeleaf "On This Day" Application
+# Spring Boot/Thymeleaf "On This Day" Application
 This is a simple Spring Boot application that uses Thymeleaf for the front-end and makes an API call to fetch historical events for the current day. The application displays the results in an index action on a localhost webpage.
 
 # Prerequisites
@@ -6,8 +6,8 @@ This is a simple Spring Boot application that uses Thymeleaf for the front-end a
 * Maven 3.2 or later
 # Running the Application Locally
 Clone the repository:
-* Copy code: git clone https://github.com/yourusername/spring-thymeleaf-on-this-day.git
-
+* ``git clone https://github.com/Djcross930/spring-indexer.git
+``
 * Change to the project directory:
 ``
 cd spring-thymeleaf-on-this-day
